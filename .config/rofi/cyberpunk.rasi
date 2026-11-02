@@ -1,0 +1,56 @@
+* {
+    background-color:            #0b0e14;
+    border-color:                #ff0055; /* Rosa Neón */
+    text-color:                  #ffffff;
+    font:                        "JetBrainsMono Nerd Font 11";
+}
+
+window {
+    location:                    north west;
+    anchor:                      north west;
+    x-offset:                    5px;
+    y-offset:                    30px; /* Deja espacio para no tapar la barra superior */
+    width:                       22%;  /* Más angosto */
+    border:                      2px;
+    border-radius:               8px;
+    padding:                     15px;
+    background-color:            #0b0e14;
+}
+
+inputbar {
+    children:                    [ prompt, entry ];
+    padding:                     8px;
+    margin:                      0px 0px 10px 0px;
+    background-color:            #1a1d24;
+    border-radius:               5px;
+}
+
+prompt {
+    text-color:                  #00f0ff; /* Cian Neón */
+    padding:                     0px 6px 0px 0px;
+}
+
+entry {
+    placeholder:                 "Buscar...";
+    placeholder-color:           #555555;
+    text-color:                  #ffffff;
+}
+
+listview {
+    lines:                       12; /* Más filas para hacerlo vertical */
+    columns:                     1;
+    spacing:                     4px;
+    background-color:            transparent;
+}
+
+element {
+    padding:                     6px 10px;
+    border-radius:               5px;
+    background-color:            transparent;
+    text-color:                  #e0e6f0;
+}
+
+element selected {
+    background-color:            #ff0055; /* Fondo rosa al seleccionar */
+    text-color:                  #ffffff;
+}
